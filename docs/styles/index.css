@@ -2677,7 +2677,8 @@ a {
     height: 41px;
     top: 32px;
     right: 32px;
-    font-size: 18px;
+    font-size: 30px;
+    line-height: 30px;
     color: #14354b;
     border: 2px solid #14354b;
     border-radius: 50%;
