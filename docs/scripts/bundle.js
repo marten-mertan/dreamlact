@@ -140,8 +140,9 @@ $(document).ready(function () {
 
     var line = $('.js-line'); 
     if (line.length){
-        line[0].addEventListener("mousedown", function(event) {
-            moveAt(event.pageX);
+        $(document).on('mousedown touchstart', '.js-line', function(e) {
+            var currentX = e.originalEvent.touches ?  e.originalEvent.touches[0].pageX : e.pageX;
+            moveAt(currentX);
             function moveAt(pageX) {
                 let left = pageX - line[0].offsetWidth / 2;
                 if (pageX <= document.documentElement.clientWidth){
@@ -159,16 +160,15 @@ $(document).ready(function () {
                     return;
             }
           
-            function onMouseMove(event) {
-                moveAt(event.pageX);
+            function onMouseMove(e) {
+                var currentX = e.originalEvent.touches ?  e.originalEvent.touches[0].pageX : e.pageX;
+                moveAt(currentX);
             }
-            document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('touchmove', onMouseMove);
-            line[0].onmouseup = function() {
-                document.removeEventListener('mousemove', onMouseMove);
-                document.removeEventListener('touchemove', onMouseMove);
+            $(document).bind('mousemove touchmove', onMouseMove);
+            $(document).on('mouseup touchend', function(e) {
+                $(document).unbind('mousemove touchmove', onMouseMove);
                 line[0].onmouseup = null;
-            };
+            });
           });
         line[0].ondragstart = function() {
             return false;
