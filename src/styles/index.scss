@@ -1770,7 +1770,7 @@ a{
         background-size: cover;
         @media screen and (max-width: 1140px){
             left: 775px;
-            z-index: 2;
+            z-index: 4;
         }
         
     }
@@ -1783,8 +1783,61 @@ a{
         background: url(../assets/img/dreamlact.png) 50% 50% no-repeat;
         background-size: cover;
         @media screen and (max-width: 1140px){
+            display:none;
             top: 110px;
         }
+        &-mobile{
+            display:none;
+            position: absolute;
+            width: 253px;
+            height: 329px;
+            top: 143px;
+            left: 809px;
+            background: url(../assets/img/family-dreamlact.png) 50% 50% no-repeat;
+            background-size: cover;
+            z-index:3;
+            transition: all .3s ease;
+            @media screen and (max-width: 1140px){
+                display: block;
+            }
+
+            &-children{
+                display:none;
+                position: absolute;
+                width: 149px;
+                height: 287px;
+                top: 114px;
+                left: 948px;
+                background: url(../assets/img/family-dreamlact-children.png) 50% 50% no-repeat;
+                background-size: cover;
+                z-index: 2;
+                transition: all .3s ease;
+                @media screen and (max-width: 1140px){
+                    display: block;
+
+                }
+            }
+        }
+    }
+    &.tab-woman{
+        .family-dreamlact-mobile{
+            &-children{
+
+            }
+        }
+    }
+    &.tab-child{
+        .family-dreamlact-mobile{
+            top: 122px;
+            left: 935px;
+            z-index: 2;
+            &-children{
+                top: 134px;
+                left: 840px;
+                z-index: 3;
+            }
+        }
+
     }
     &-tabs{
         display: none;

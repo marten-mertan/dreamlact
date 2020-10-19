@@ -139,6 +139,8 @@ $(document).ready(function () {
         let tab = $(this).data('tab');
         $('.js-tab-content').removeClass('active');
         $('#'+tab).addClass('active');
+        $('.js-family').removeClass('tab-child tab-woman');
+        $('.js-family').addClass(tab);
     });
     
     $(document).on('click', '.js-buy-woman', function (e) {
@@ -149,5 +151,26 @@ $(document).ready(function () {
     $(document).on('click', '.js-buy-children', function (e) {
         e.preventDefault();
         $('.js-buy').removeClass('for-woman').addClass('for-children');
+    });
+    $(document).on('click', '.family-dreamlact-mobile', function (e) {
+        e.preventDefault();
+        $('.js-tab').toggleClass('active');
+        $('.js-tab-content').toggleClass('active');
+        $('.js-family').toggleClass('tab-child');
+
+    });
+    $(document).on('click', '.family-dreamlact-mobile-children', function (e) {
+        e.preventDefault();
+        $('.js-tab').toggleClass('active');
+        $('.js-tab-content').toggleClass('active');
+        $('.js-family').toggleClass('tab-child');
+    });
+    $(document).on('click', '.buy-decor__img-1', function (e) {
+        e.preventDefault();
+        $('.js-buy').toggleClass('for-children for-woman');
+    });
+    $(document).on('click', '.buy-decor__img-2', function (e) {
+        e.preventDefault();
+        $('.js-buy').toggleClass('for-children for-woman');
     });
 });
