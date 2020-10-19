@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'), url('Robotothin.woff2') format('woff2'), url('Robotothin.woff') format('woff'), url('Robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('Robotolight.woff2') format('woff2'), url('Robotolight.woff') format('woff'), url('Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('Roboto.woff2') format('woff2'), url('Roboto.woff') format('woff'), url('Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'), url('Robotoitalic.woff2') format('woff2'), url('Robotoitalic.woff') format('woff'), url('Robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('Robotobold.woff2') format('woff2'), url('Robotobold.woff') format('woff'), url('Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'), url('Robotoblack.woff2') format('woff2'), url('Robotoblack.woff') format('woff'), url('Robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face { 
+    font-family: "FuturaRound";
+    src: url('FuturaRound.eot');
+    src: url('FuturaRound.eot?#iefix')format('embedded-opentype'),
+    url('FuturaRound.woff') format('woff'),
+    url('FuturaRound.woff2') format('woff2'),
+    url('FuturaRound.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "FuturaRoundBold";
+    src: url('FuturaRoundBold.eot');
+    src: url('FuturaRoundBold.eot?#iefix')format('embedded-opentype'),
+    url('FuturaRoundBold.woff') format('woff'),
+    url('FuturaRoundBold.woff2') format('woff2'),
+    url('FuturaRoundBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "FuturaRoundBoldItalic";
+    src: url('FuturaRoundBoldItalic.eot');
+    src: url('FuturaRoundBoldItalic.eot?#iefix')format('embedded-opentype'),
+    url('FuturaRoundBoldItalic.woff') format('woff'),
+    url('FuturaRoundBoldItalic.woff2') format('woff2'),
+    url('FuturaRoundBoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+}
