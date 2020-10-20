@@ -263,6 +263,9 @@ $(document).ready(function () {
         e.preventDefault();
         $('.js-buy').toggleClass('for-children for-woman');
     });
+    $(document).on('click', '.js-list-item', function (e) {
+        $(this).toggleClass('open');
+    });
 });
 
 /***/ })

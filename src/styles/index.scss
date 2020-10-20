@@ -1963,6 +1963,15 @@ a{
 
                 }
             }
+            &.open{
+                .family-list__text{
+                    max-height: 600px;
+                    .mod-text-full{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
         }
         &__icon{
             flex: 0 0 auto;
@@ -1977,11 +1986,14 @@ a{
             transition: all .3s ease;
         }
         &__text{
+            display: block;
             align-self: center;
             font-size: 15px;
             font-family: "FuturaRound";
             line-height: 1.333;
             text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11);
+            max-height: 20px;
+            transition: all .4s ease;
             p{
                 margin-bottom: 0;
             }
@@ -1989,6 +2001,11 @@ a{
                 color: #009ea0;
                 font-weight: bold;
 
+            }
+            .mod-text-full{
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s ease;
             }
         }
     }
