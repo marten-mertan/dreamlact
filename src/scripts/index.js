@@ -59,11 +59,11 @@ $(document).ready(function () {
                     line[0].style.left = left  + 'px';
                 }
                 if (left / document.documentElement.clientWidth < 0.4){
-                    $('.js-compose').removeClass('both').removeClass('child').addClass('woman');
+                    $('.js-compose').removeClass('both').removeClass('woman').addClass('child');
                     return;
                 }
                 if (left / document.documentElement.clientWidth > 0.6){
-                    $('.js-compose').removeClass('woman').removeClass('both').addClass('child');
+                    $('.js-compose').removeClass('child').removeClass('both').addClass('woman');
                     return;
                 }
                 $('.js-compose').removeClass('woman').removeClass('child').addClass('both');
@@ -89,12 +89,12 @@ $(document).ready(function () {
     $(document).on('click','.js-child', function(e){
         e.preventDefault();
         $('.js-compose').removeClass('woman').removeClass('both').addClass('child');
-        line[0].style.left = 90 + "%";
+        line[0].style.left = 10 + "%";
     });
     $(document).on('click','.js-woman', function(e){
         $('.js-compose').removeClass('both').removeClass('child').addClass('woman');
         e.preventDefault();
-        line[0].style.left = 10 + "%";
+        line[0].style.left = 90 + "%";
     });
 
     $(document).on('click', '.js-popup-close', function (e) {

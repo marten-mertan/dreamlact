@@ -1629,6 +1629,7 @@ a {
     @media screen and (max-width: 1140px) {
       .family-moon {
         left: 775px;
+        top: -16px;
         z-index: 4; } }
   .family-dreamlact {
     position: absolute;
@@ -1675,8 +1676,8 @@ a {
     left: 935px;
     z-index: 2; }
     .family.tab-child .family-dreamlact-mobile-children {
-      top: 134px;
-      left: 840px;
+      top: 152px;
+      left: 843px;
       z-index: 3; }
   .family-tabs {
     display: none; }
@@ -2503,7 +2504,7 @@ a {
     .main {
       height: auto; } }
   .main-head {
-    background: url(../assets/img/compose-woman.jpg) 50% 50% no-repeat;
+    background: url(../assets/img/compose-woman.jpg) 50% 100% no-repeat;
     background-size: cover; }
     @media screen and (max-width: 1140px) {
       .main-head {
@@ -2894,7 +2895,7 @@ a {
     text-align: center; }
 
 .adult-instruction .main-head-content {
-  padding-left: 380px; }
+  padding-left: 410px; }
   @media screen and (max-width: 1140px) {
     .adult-instruction .main-head-content {
       padding: 0; } }
