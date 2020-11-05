@@ -1620,7 +1620,7 @@ a {
     width: 264px;
     height: 373px;
     top: 0px;
-    left: 1190px;
+    left: 1230px;
     background: url(../assets/img/sheep-2.png) 50% 50% no-repeat;
     background-size: cover; }
     @media screen and (max-width: 1140px) {
@@ -2117,7 +2117,7 @@ a {
   background-size: cover;
   height: 907px;
   padding-bottom: 175px;
-  margin-bottom: 114px;
+  margin-bottom: 88px;
   z-index: 1; }
   @media screen and (max-width: 1140px) {
     .buy {
