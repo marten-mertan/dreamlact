@@ -604,10 +604,10 @@ a {
         display: none; } }
     .head-woman__img {
       position: absolute;
-      top: 150px;
-      right: -10px;
-      width: 263px;
-      height: 489px;
+      top: 156px;
+      right: 20px;
+      width: 237px;
+      height: 441px;
       background: url(../assets/img/head-woman.png) 50% 50% no-repeat;
       background-size: cover; }
       @media screen and (max-width: 1140px) {
@@ -636,10 +636,10 @@ a {
         display: none; } }
     .head-child__img {
       position: absolute;
-      width: 193px;
-      height: 475px;
-      top: 92px;
-      left: 0;
+      width: 174px;
+      height: 428px;
+      top: 72px;
+      left: -23px;
       background: url(../assets/img/head-child.png) 50% 50% no-repeat;
       background-size: cover; }
     .head-child__title {
@@ -647,7 +647,7 @@ a {
       top: 0;
       left: 0;
       top: 64px;
-      left: 186px;
+      left: 166px;
       width: 160px;
       font-size: 55px;
       font-family: "FuturaRound";
@@ -658,7 +658,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 540px;
+    width: 520px;
     bottom: 90px;
     right: 70px;
     z-index: 7; }
@@ -832,10 +832,18 @@ a {
       text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11); }
       @media screen and (max-width: 1140px) {
         .compose-woman__title {
-          font-family: "FuturaRoundBold";
-          margin-bottom: 24px;
-          font-size: 20px;
-          text-align: center; } }
+          display: none; } }
+      .compose-woman__title-mobile {
+        display: none; }
+        @media screen and (max-width: 1140px) {
+          .compose-woman__title-mobile {
+            display: block;
+            font-family: "FuturaRoundBold";
+            margin-bottom: 24px;
+            font-size: 20px;
+            line-height: 1;
+            text-align: center;
+            color: #212c28; } }
       .compose-woman__title .mod-bold {
         font-family: "FuturaRoundBold"; }
     .compose-woman__subtitle {
@@ -1692,7 +1700,7 @@ a {
         border-radius: 2px; } }
     .family-tabs-item {
       position: relative;
-      font-size: 15px;
+      font-size: 16px;
       font-family: "FuturaRoundBold";
       color: #212c28;
       text-transform: uppercase;
@@ -1975,12 +1983,9 @@ a {
           @media screen and (max-width: 1140px) {
             .important-tablet-item.mod-food .important-tablet-item-desc {
               width: 80px; } }
-          @media screen and (max-width: 1140px) {
-            .important-tablet-item.mod-food .important-tablet-item-desc__text {
-              margin-left: -40px; } }
         .important-tablet-item.mod-food .important-tablet-item-decor {
           transform: scale(-1, 1);
-          left: 233px;
+          left: 223px;
           top: 26px; }
           @media screen and (max-width: 1140px) {
             .important-tablet-item.mod-food .important-tablet-item-decor {
@@ -2018,7 +2023,7 @@ a {
           width: 172px; }
           @media screen and (max-width: 1140px) {
             .important-tablet-item.mod-month .important-tablet-item-desc {
-              width: 130px; } }
+              width: 120px; } }
           @media screen and (max-width: 1140px) {
             .important-tablet-item.mod-month .important-tablet-item-desc__title {
               margin-bottom: 0; } }
@@ -2071,7 +2076,7 @@ a {
               width: 120px; } }
       .important-tablet-item.mod-attention-2 {
         left: -184px;
-        top: 304px; }
+        top: 284px; }
         @media screen and (max-width: 1140px) {
           .important-tablet-item.mod-attention-2 {
             left: 0;

@@ -561,10 +561,10 @@ a{
         }
         &__img{
             position: absolute;
-            top: 150px;
-            right: -10px;
-            width: 263px;
-            height: 489px;
+            top: 156px;
+            right: 20px;
+            width: 237px;
+            height: 441px;
             background: url(../assets/img/head-woman.png) 50% 50% no-repeat;
             background-size: cover;
             @media screen and (max-width: 1140px){
@@ -597,10 +597,10 @@ a{
         }
         &__img{
             position: absolute;
-            width: 193px;
-            height: 475px;
-            top: 92px;
-            left: 0;
+            width: 174px;
+            height: 428px;
+            top: 72px;
+            left: -23px;
             background: url(../assets/img/head-child.png) 50% 50% no-repeat;
             background-size: cover;
 
@@ -610,7 +610,7 @@ a{
             top: 0;
             left: 0;
             top: 64px;
-            left: 186px;
+            left: 166px;
             width: 160px;
             font-size: 55px;
             font-family: "FuturaRound";
@@ -625,7 +625,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 540px;
+        width: 520px;
         bottom: 90px;
         right: 70px;
         z-index: 7;
@@ -835,10 +835,19 @@ a{
             line-height: 1;
             text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11);
             @media screen and (max-width: 1140px){
-                font-family: "FuturaRoundBold";
-                margin-bottom: 24px;
-                font-size: 20px;
-                text-align: center;
+                display: none;
+            }
+            &-mobile{
+                display: none;
+                @media screen and (max-width: 1140px){
+                    display: block;
+                    font-family: "FuturaRoundBold";
+                    margin-bottom: 24px;
+                    font-size: 20px;
+                    line-height: 1;
+                    text-align: center;
+                    color: #212c28;
+                }
             }
             .mod-bold{
                 font-family: "FuturaRoundBold";
@@ -1853,7 +1862,7 @@ a{
         }
         &-item{
             position: relative;
-            font-size: 15px;
+            font-size: 16px;
             font-family: "FuturaRoundBold";
             color: #212c28;
             text-transform: uppercase;
@@ -2201,14 +2210,14 @@ a{
                     }
                     &__text{
                         @media screen and (max-width: 1140px){
-                            margin-left: -40px;
+                            
                         }
 
                     }
                 }
                 .important-tablet-item-decor{
                     transform: scale(-1,1);
-                    left: 233px;
+                    left: 223px;
                     top: 26px;
                     @media screen and (max-width: 1140px){
                         left: -13px;
@@ -2250,7 +2259,7 @@ a{
                 .important-tablet-item-desc{
                     width: 172px;
                     @media screen and (max-width: 1140px){
-                        width: 130px;
+                        width: 120px;
                     }
                     &__title{
                         @media screen and (max-width: 1140px){
@@ -2322,7 +2331,7 @@ a{
             }
             &.mod-attention-2{
                 left: -184px;
-                top: 304px;
+                top: 284px;
                 @media screen and (max-width: 1140px){
                     left: 0;
                     top: 162px;
