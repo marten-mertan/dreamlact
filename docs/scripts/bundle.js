@@ -95,7 +95,7 @@ $(document).ready(function () {
         $(document).on("click", elem, function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
-                menuHeight = 70,
+                menuHeight = 160,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
 
