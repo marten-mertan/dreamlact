@@ -2771,10 +2771,12 @@ a {
     width: 100%; }
     .popup-form-row {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      align-items: flex-end; }
       @media screen and (max-width: 640px) {
         .popup-form-row {
-          flex-direction: column; } }
+          flex-direction: column;
+          align-items: flex-start; } }
     .popup-form-multi {
       display: flex;
       flex-direction: row;
@@ -2782,15 +2784,27 @@ a {
     .popup-form__input {
       flex: 1 1 auto;
       width: 100%;
-      margin-bottom: 28px; }
+      margin-bottom: 28px;
+      background-color: transparent;
+      border: 2px solid transparent; }
+      .popup-form__input.mod-error {
+        background-color: #e74c6d;
+        border-color: #e74c6d;
+        border-radius: 6px;
+        transition: all .3s ease; }
+        .popup-form__input.mod-error .popup-form-input__text {
+          display: none; }
+          .popup-form__input.mod-error .popup-form-input__text--error {
+            display: inline-block; }
       @media screen and (max-width: 640px) {
         .popup-form__input {
           margin-bottom: 10px; } }
       .popup-form__input:not(:last-child) {
         margin-right: 20px; }
       .popup-form__input input {
+        vertical-align: top;
         border: 1px solid #ededed;
-        border-radius: 8px;
+        border-radius: 5px;
         background: #fff;
         color: #6B6B6B;
         margin: 0;
@@ -2806,8 +2820,9 @@ a {
         width: 100%;
         transition: all 0.4s ease; }
       .popup-form__input textarea {
+        vertical-align: top;
         border: 1px solid #ededed;
-        border-radius: 8px;
+        border-radius: 5px;
         background: #fff;
         color: #6B6B6B;
         margin: 0;
@@ -2835,6 +2850,16 @@ a {
           display: none; } }
       .popup-form-input__text.mod-black {
         color: #14344d; }
+      .popup-form-input__text--error {
+        display: none;
+        padding: 4px 8px 5px;
+        font-size: 12px;
+        font-family: "Roboto";
+        font-weight: 300;
+        line-height: 1.2;
+        color: #fff;
+        text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11);
+        transition: all .3s ease; }
     .popup-form__checkbox {
       display: block;
       font-size: 16px;
@@ -2974,3 +2999,27 @@ a {
   @media screen and (max-width: 1140px) {
     .children-instruction .main-head {
       background: none; } }
+
+@media screen and (max-width: 640px) {
+  .popup-form-message .mfp-content {
+    height: auto; } }
+
+.popup-form-message .popup {
+  background: url(../assets/img/message-background.jpg) 90% 100% no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 640px) {
+    .popup-form-message .popup {
+      border-radius: 10px; } }
+  .popup-form-message .popup-body {
+    padding: 70px 15px; }
+
+.popup-form-message .popup__close {
+  border-color: #14344d;
+  color: #14344d; }
+
+.popup-form-message .popup__text {
+  font-size: 25px;
+  font-family: "FuturaRound";
+  color: #14344d;
+  line-height: 1.2;
+  text-align: center; }

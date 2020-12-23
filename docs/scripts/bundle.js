@@ -266,6 +266,68 @@ $(document).ready(function () {
     $(document).on('click', '.js-list-item', function (e) {
         $(this).toggleClass('open');
     });
+    $(document).on('click', '.js-popup-form-accept', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        checkForm();
+    });
+
+    function checkForm(){
+        let $inputEmail = $('.js-input-email'),
+            $inputPhone = $('.js-input-phone'),
+            $inputMessage = $('.js-input-message'),
+            $inputLicence = $('.js-input-licence'),
+            counter = 0;
+
+        if (!$inputEmail.find('input').val()){
+            $inputEmail.addClass('mod-error');
+            counter++;
+        } else {
+            $inputEmail.removeClass('mod-error');
+
+        }
+        if (!$inputPhone.find('input').val()){
+            $inputPhone.addClass('mod-error');
+            counter++;
+        } else {
+            $inputPhone.removeClass('mod-error');
+
+        }
+        if (!$inputMessage.find('textarea').val()){
+            $inputMessage.addClass('mod-error');
+            counter++;
+        } else {
+            $inputMessage.removeClass('mod-error');
+
+        }
+        if (counter){
+            declineForm();
+        } else {
+            acceptForm();
+        }
+    }
+    function acceptForm(){
+        var windowWidth = (window.innerWidth );
+        var documentWidth = (document.documentElement.clientWidth );
+        var $html = $('html');
+        $('.js-popup-form').removeClass('is-visible');
+        $('.js-popup-form-message').addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+        $html.addClass('lock-html');
+        $('body').addClass('fixed-input');
+        if(windowWidth > documentWidth){
+            $('.mfp-wrap').css({
+                'overflow-y':'scroll'
+            });
+        }
+    }
+    function declineForm(){
+
+    }
+    
+    $(document).on('click', function(e){
+        $('.popup-form__input').removeClass('mod-error');
+    });
 });
 
 /***/ })

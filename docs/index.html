@@ -774,27 +774,30 @@
                             <div class="popup__title">Задать вопрос</div>
                             <form class="popup-form" autocomplete="off">
                                 <div class="popup-form-row">
-                                    <label class="popup-form__input">
+                                    <label class="popup-form__input js-input-phone mod-error">
                                         <p class="popup-form-input__text">Ваш телефон:</p>
+                                        <p class="popup-form-input__text--error">! Введите телефон</p>
                                         <input type="text" name="name" autocomplete="off" placeholder="Ваш телефон: +7 ( ) - -">
                                     </label>
-                                    <label class="popup-form__input">
+                                    <label class="popup-form__input js-input-email">
                                         <p class="popup-form-input__text mod-black">Email:</p>
+                                        <p class="popup-form-input__text--error">! Проверьте email</p>
                                         <input type="email" name="email" autocomplete="off" placeholder="Email: ...@...">
                                     </label>
                                 </div>
                                 <div class="popup-form-multi">
-                                    <label class="popup-form__input">
+                                    <label class="popup-form__input js-input-message">
                                         <p class="popup-form-input__text">Ваше сообщение:</p>
+                                        <p class="popup-form-input__text--error">! Введите только текстовые символы и числа</p>
                                         <textarea  type="email" name="name" autocomplete="off" placeholder="Введите сообщение"></textarea>
                                     </label>
                                 </div>
-                                <a href="/" class="ui-button">
+                                <a href="/" class="ui-button js-popup-form-accept">
                                     <div class="ui-button-content">
                                         Задать вопрос
                                     </div>
                                 </a>
-                                <label class="popup-form__checkbox">
+                                <label class="popup-form__checkbox js-input-licence">
                                     <input type="checkbox" name="accept" class="checkbox">
                                     <span class="checkbox"></span>
                                     <span>Я даю согласие  на обработку и хранение 
@@ -802,6 +805,20 @@
                                         с <a href="/">политикой конфиденциальности</a></span>
                                 </label>
                             </form>
+                        </div>
+                        <div class="popup__close js-popup-close">
+                            ×
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mfp-wrap popup-form-message js-popup-form-message">
+            <div class="mfp-container">
+                <div class="mfp-content">
+                    <div class="popup ">
+                        <div class="popup-body">
+                            <div class="popup__text">Ваше сообщение </br> отправлено!</div>
                         </div>
                         <div class="popup__close js-popup-close">
                             ×
