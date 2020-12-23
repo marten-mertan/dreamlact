@@ -208,7 +208,9 @@ $(document).ready(function () {
             counter++;
         } else {
             $inputMessage.removeClass('mod-error');
-
+        }
+        if (!$inputLicence.find('input').is(':checked')){
+            counter++;
         }
         if (counter){
             declineForm();
