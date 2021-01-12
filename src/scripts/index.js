@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(document).on("click", elem, function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
-                menuHeight = 160,
+                menuHeight = $('header').outerHeight(),
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
 

@@ -914,6 +914,9 @@ a {
           order: 2; } }
     .compose-child .compose-icons {
       width: 640px; }
+      @media screen and (max-width: 1140px) {
+        .compose-child .compose-icons {
+          width: 100%; } }
     .compose-child .compose-table {
       width: 640px; }
       @media screen and (max-width: 1140px) {
@@ -1038,6 +1041,16 @@ a {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 30px; }
+    .compose-tabs-wrap {
+      width: 50%;
+      display: flex;
+      flex: 1 1 auto; }
+      .compose-tabs-wrap:first-child {
+        justify-content: flex-end;
+        margin-right: 40px; }
+        @media screen and (max-width: 1140px) {
+          .compose-tabs-wrap:first-child {
+            margin-right: 40px; } }
     .compose-tabs__link {
       position: relative;
       display: block;
@@ -1050,7 +1063,7 @@ a {
       @media screen and (max-width: 1140px) {
         .compose-tabs__link {
           padding: 18px 0 18px;
-          width: 50%; } }
+          max-width: 120px; } }
       .compose-tabs__link:after {
         display: block;
         position: absolute;
@@ -1672,7 +1685,7 @@ a {
       left: 809px;
       background: url(../assets/img/family-dreamlact.png) 50% 50% no-repeat;
       background-size: cover;
-      z-index: 3;
+      z-index: 5;
       transition: all .3s ease; }
       @media screen and (max-width: 1140px) {
         .family-dreamlact-mobile {
@@ -1686,19 +1699,19 @@ a {
         left: 948px;
         background: url(../assets/img/family-dreamlact-children.png) 50% 50% no-repeat;
         background-size: cover;
-        z-index: 2;
+        z-index: 4;
         transition: all .3s ease; }
         @media screen and (max-width: 1140px) {
           .family-dreamlact-mobile-children {
             display: block; } }
   .family.tab-child .family-dreamlact-mobile {
-    top: 122px;
-    left: 935px;
-    z-index: 2; }
+    top: 113px;
+    left: 809px;
+    z-index: 4; }
     .family.tab-child .family-dreamlact-mobile-children {
-      top: 152px;
-      left: 843px;
-      z-index: 3; }
+      top: 144px;
+      left: 948px;
+      z-index: 5; }
   .family-tabs {
     display: none; }
     @media screen and (max-width: 1140px) {
@@ -2194,13 +2207,11 @@ a {
         display: none; } }
     @media screen and (max-width: 1140px) {
       .buy-cols.for-children .buy-decor__img-1 {
-        top: 0;
-        left: 80px;
+        top: 4px;
         z-index: 1; } }
     @media screen and (max-width: 1140px) {
       .buy-cols.for-children .buy-decor__img-2 {
         top: 14px;
-        left: 69px;
         z-index: 2; } }
     @media screen and (max-width: 1140px) {
       .buy-cols.for-children .buy-decor__text-2 {
@@ -2499,8 +2510,8 @@ a {
   z-index: 11;
   width: 74px;
   height: 74px;
-  bottom: 130px;
-  right: 80px;
+  bottom: 82px;
+  right: 24px;
   overflow: hidden;
   white-space: nowrap;
   visibility: hidden;
