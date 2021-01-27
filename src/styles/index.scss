@@ -792,6 +792,11 @@ a{
         visibility: hidden;
         transition: all .3s ease;
         @media screen and (max-width: 1140px){
+            background: url(../assets/img/compose-woman-tablet.jpg) 65% 50% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        @media screen and (max-width: 720px){
             position: relative;
             background: url(../assets/img/woman-back-mobile.png) 0% 0% no-repeat;
             background-size: auto;
@@ -824,6 +829,9 @@ a{
             flex: 0 0 auto;
             width: 720px;
             @media screen and (max-width: 1140px){
+                margin-left: auto;
+            }
+            @media screen and (max-width: 720px){
                 width: 100%;
             }
         }
@@ -896,6 +904,11 @@ a{
         visibility: hidden;
         transition: all .3s ease;
         @media screen and (max-width: 1140px){
+            background: url(../assets/img/compose-child-tablet.jpg) 25% 50% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        @media screen and (max-width: 720px){
             position: relative;
             background: url(../assets/img/child-back-mobile.png) 100% 0% no-repeat;
             background-size: auto;
@@ -928,6 +941,9 @@ a{
             flex: 0 0 auto;
             width: 640px;
             @media screen and (max-width: 1140px){
+                order: 2;
+            }
+            @media screen and (max-width: 720px){
                 width: 100%;
                 order: 2;
             }
