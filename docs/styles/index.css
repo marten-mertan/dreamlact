@@ -795,6 +795,10 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease; }
+    @media screen and (max-width: 1302px) {
+      .compose-woman {
+        background: url(../assets/img/compose-woman-tablet.jpg) 50% 50% no-repeat;
+        background-size: cover; } }
     @media screen and (max-width: 1140px) {
       .compose-woman {
         background: url(../assets/img/compose-woman-tablet.jpg) 65% 50% no-repeat;
@@ -891,6 +895,10 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease; }
+    @media screen and (max-width: 1302px) {
+      .compose-child {
+        background: url(../assets/img/compose-child-tablet.jpg) 50% 50% no-repeat;
+        background-size: cover; } }
     @media screen and (max-width: 1140px) {
       .compose-child {
         background: url(../assets/img/compose-child-tablet.jpg) 25% 50% no-repeat;
@@ -2562,7 +2570,12 @@ a {
       height: auto; } }
   .main-head {
     background: url(../assets/img/compose-woman.jpg) 50% 100% no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    transition: all .3s ease; }
+    @media screen and (max-width: 1302px) {
+      .main-head {
+        background: url(../assets/img/compose-woman-tablet.jpg) 50% 100% no-repeat;
+        background-size: cover; } }
     @media screen and (max-width: 1140px) {
       .main-head {
         padding: 30px 16px;
@@ -3022,7 +3035,12 @@ a {
 
 .children-instruction .main-head {
   background: url(../assets/img/compose-child.jpg) 50% 50% no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  transition: all .3s ease; }
+  @media screen and (max-width: 1302px) {
+    .children-instruction .main-head {
+      background: url(../assets/img/compose-child-tablet.jpg) 50% 50% no-repeat;
+      background-size: cover; } }
   @media screen and (max-width: 1140px) {
     .children-instruction .main-head {
       background: none; } }
